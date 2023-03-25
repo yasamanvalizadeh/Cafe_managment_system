@@ -1,0 +1,201 @@
+﻿@model CafeManagmentSystem.ViewModel.SortOrderItemViewModel
+@{
+    var prevDisabled = !Model.Items.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Items.HasNextPage ? "disabled" : "";
+}
+<div class="pink-container">
+    <main class="main-content position-relative border-radius-lg ps ps--active-y" style="height: auto;">
+
+        <!--search box-->
+        <form asp-action="Index" method="get" autocomplete="off">
+            <div style="width:auto;display:flex;margin-bottom:40px;align-items:center;">
+                <input class="s-Input" type="text" name="query" placeholder="Search by item name..." />
+
+                <button type="submit" style="border:none;background-color:transparent;">
+                    <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl" style="width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin:auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </div>
+                </button>
+
+                <a asp-action="Index"
+                   asp-route-so="@Model.CurrentSort">
+                    <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl" style="width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin:auto;">
+                        <img src="~/image/multiply-icon.png" width="24px;" />
+                    </div>
+                </a>
+
+            </div>
+        </form>
+
+        <!-- All Items   -->
+        <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                    <h3 style="color:white;letter-spacing: 2px;padding-left: 1rem !important;text-transform: capitalize !important;">
+                        Manage Items
+                    </h3>
+                </div>
+            </div>
+            <table class="t-items">
+                <tr>
+                    <th>
+                        <a asp-action="Index" 
+                        asp-route-so="@Model.NameSort" 
+                        asp-route-query="@Model.CurrentFilter"
+                           asp-route-TenantId="@ViewData["CurrentTenantId"]"
+                        class="sort-link" id="sort-link">
+                            @Html.DisplayNameFor(model => model.NameSort)
+                        </a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" 
+                        asp-route-so="@Model.CategorySort" 
+                        asp-route-query="@Model.CurrentFilter"
+                           asp-route-TenantId="@ViewData["CurrentTenantId"]"
+                        class="sort-link" id="sort-link">
+                            @Html.DisplayNameFor(model => model.CategorySort)
+                        </a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" 
+                        asp-route-so="@Model.PriceSort" 
+                        asp-route-query="@Model.CurrentFilter"
+                           asp-route-TenantId="@ViewData["CurrentTenantId"]"
+                        class="sort-link" id="sort-link">
+                            @Html.DisplayNameFor(model => model.PriceSort)
+                        </a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" 
+                        asp-route-so="@Model.AddDateSort" 
+                        asp-route-query="@Model.CurrentFilter"
+                           asp-route-TenantId="@ViewData["CurrentTenantId"]"
+                        class="sort-link" id="sort-link">
+                            @Html.DisplayNameFor(model => model.AddDateSort)
+                        </a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" 
+                        asp-route-so="@Model.UpDateSort" 
+                        asp-route-query="@Model.CurrentFilter"
+                           asp-route-TenantId="@ViewData["CurrentTenantId"]"
+                        class="sort-link" id="sort-link">
+                            @Html.DisplayNameFor(model => model.UpDateSort)
+                        </a>
+                    </th>
+                    <th>
+                        Edit
+                    </th>
+                    <th>
+                        Delete
+                    </th>
+                    <th>
+                        Item Orders
+                    </th>
+                </tr>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+
+                        <td>
+                            @item.ItemName
+                        </td>
+                        <td>
+                            @item.Category.CategoryName
+                        </td>
+                        <td>
+                            @item.UnitPrice
+                        </td>
+                        <td>
+                            @string.Format("{0:MM/dd/yyyy}", item.AddedDate)
+                        </td>
+                        <td>
+                            @string.Format("{0:MM/dd/yyyy}", item.UpdateDate)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" 
+                            asp-route-id="@item.ItemId" 
+                           asp-route-so="@Model.CurrentSort"
+                            asp-route-query="@Model.CurrentFilter"
+                            asp-route-pageIndex="@Model.Items.PageIndex"
+                           asp-route-TenantId="@item.TenantId">
+                                <button type="submit" style="background-color:transparent;border:none;">
+                                    <div class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl" style="width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin:auto;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </a>
+                        </td>
+                        <td>
+                            <a asp-action="Delete" 
+                            asp-route-id="@item.ItemId"
+                           asp-route-so="@Model.CurrentSort"
+                           asp-route-query="@Model.CurrentFilter"
+                           asp-route-pageIndex="@Model.Items.PageIndex"
+                           asp-route-TenantId="@item.TenantId">
+                                <button type="submit" style="background-color:transparent;border:none;">
+                                    <div class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl" style="width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin:auto;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </a>
+                        </td>
+                        <td>
+                            <a asp-action="ShowItemOrders"
+                           asp-route-id="@item.ItemId"
+                           asp-route-so="@Model.CurrentSort"
+                           asp-route-query="@Model.CurrentFilter"
+                           asp-route-pageIndex="@Model.Items.PageIndex"
+                           asp-route-TenantId="@item.TenantId">
+                                <button style="background-color:transparent;border:none;">
+                                    <div class="icon icon-lg icon-shape bg-gradient-info shadow-success text-center border-radius-xl" style="width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin:auto;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </table>
+            
+        </div>
+        <div style="margin: 5px 25px 5px;width:200px;">
+            <a asp-action="Index"
+               asp-route-so="@Model.CurrentSort" 
+               asp-route-query="@Model.CurrentFilter"
+               asp-route-pageIndex="@(Model.Items.PageIndex - 1)"
+            class="@prevDisabled">
+                <button type="submit" style="background-color:transparent;border:none;">
+                    <div class="icon icon-lg icon-shape bg-gradient-info shadow-success text-center border-radius-xl" style="width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin:auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                        </svg>
+                    </div>
+                </button>
+            </a>
+
+            <a asp-action="Index"
+               asp-route-so="@Model.CurrentSort"
+               asp-route-query="@Model.CurrentFilter"
+               asp-route-pageIndex="@(Model.Items.PageIndex + 1)"
+               class="@nextDisabled">
+                <button type="submit" style="background-color:transparent;border:none;">
+                    <div class="icon icon-lg icon-shape bg-gradient-info shadow-success text-center border-radius-xl" style="width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin:auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                    </div>
+                </button>
+            </a>
+        </div>
+    </main>
+</div>
+ 

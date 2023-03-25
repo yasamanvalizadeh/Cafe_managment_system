@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CafeManagmentSystem.ViewModel.Users.UserSignUpDateGroupViewModel>
+@{
+    ViewData["Title"] = "User Statistics";
+}
+
+<div class="pink-container">
+    <main class="main-content position-relative border-radius-lg ps ps--active-y" style="height: auto;">
+        <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                    <h3 style="color:white;letter-spacing: 2px;padding-left: 1rem !important;text-transform: capitalize !important;">
+                        Users SignUp Statistics
+                    </h3>
+                </div>
+            </div>
+
+            <table class="t-items">
+                <tr>
+                    <th style ="text-align:left">
+                        SignUp Date Time
+                    </th >
+                    <th style="text-align:left;">
+                        User Numbers
+                    </th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th style="text-align:left">
+                            @string.Format("{0:MM/dd/yyyy - hh:mm tt}",item.SignUpDate)
+                        </th>
+                        <th style="text-align:left;padding-left:30px;">
+                            @item.UserCount
+                        </th>
+                    </tr>
+                }
+            </table>
+    </main>
+</div>

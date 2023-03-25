@@ -1,0 +1,42 @@
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.deps.json
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.csproj.AssemblyReference.cache
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.GeneratedMSBuildEditorConfig.editorconfig
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.AssemblyInfoInputs.cache
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.AssemblyInfo.cs
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.csproj.CoreCompileInputs.cache
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\refint\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\ref\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.runtimeconfig.json
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.genruntimeconfig.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.deps.json
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.runtimeconfig.json
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.csproj.AssemblyReference.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.GeneratedMSBuildEditorConfig.editorconfig
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.AssemblyInfoInputs.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.AssemblyInfo.cs
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.csproj.CoreCompileInputs.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\refint\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.genruntimeconfig.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Common\obj\Debug\net7.0\ref\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.deps.json
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.runtimeconfig.json
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\bin\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.csproj.AssemblyReference.cache
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.GeneratedMSBuildEditorConfig.editorconfig
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.AssemblyInfoInputs.cache
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.AssemblyInfo.cs
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.csproj.CoreCompileInputs.cache
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\refint\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\CafeManagmentSystem.Common.genruntimeconfig.cache
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.Common\obj\Debug\net7.0\ref\CafeManagmentSystem.Common.dll

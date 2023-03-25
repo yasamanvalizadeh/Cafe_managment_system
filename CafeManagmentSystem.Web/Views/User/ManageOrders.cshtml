@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "Order List";
+} 
+ 
+<main class="main-content position-relative border-radius-lg ps ps--active-y" style="height: auto;">
+
+    <!-- Add User Form -->
+    <div style="margin-top: 70px;">
+        <div class="card my-4">
+        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+            <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                    <h6 style="color:white;letter-spacing: 2px;padding-left: 1rem !important;text-transform: capitalize !important;">
+                    Basic Information
+                </h6>
+            </div>
+        </div>
+
+        <table class="t-items">
+                <tr>
+                    <th>
+                        Order no
+                    </th>
+                    <th>
+                        Order Date
+                    </th>
+                    <th>
+                        Order Time
+                    </th>
+                    <th>
+                        Order By
+                    </th>
+                    <th>
+                        Orderer Contact
+                    </th>
+                </tr>
+                @foreach (var od in ViewBag.OrderDetails)
+                {
+
+                    <tr>
+                        <td>
+                            @od.OrderId
+                        </td>
+                        <td>
+                            @string.Format("{0:yy/dd/MM}",od.AddedDate)
+                        </td>
+                        <td>
+                            @string.Format("{0:hh:mm tt}",od.AddedDate)
+                        </td>
+                        <td>
+                            @od.Order.User.UserName
+                        </td>
+                        <td>
+                            @od.Order.User.UserNumber
+                        </td>
+                    </tr>
+                } 
+            </table>
+        </div>
+    </div>
+
+    <div style="margin-top: 70px;">
+        <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                    <h6  style="color:white;letter-spacing: 2px;padding-left: 1rem !important;text-transform: capitalize !important;">
+                        Order Details
+                    </h6>
+                </div>
+            </div>
+            <table class="t-items">
+                <tr>
+                    <th>
+                        Item Name
+                    </th>
+                    <th>
+                        Item Category
+                    </th>
+                    <th>
+                        Unit Price
+                    </th>
+                    <th>
+                        Qty
+                    </th>
+                    <th>
+                        Amoumnt
+                    </th>
+                </tr>
+                @foreach (var od in ViewBag.OrderDetails)
+                {
+
+                    <tr>
+                        <td>
+                            @od.Item.ItemName
+                        </td>
+                        <td>
+                           @od.Item.CategoryId
+                        </td>
+                        <td>
+                            @od.Item.UnitPrice $
+                        </td>
+                        <td>
+                            @od.Qty
+                        </td>
+                        <td>
+                            @od.Amount $
+                        </td>
+                    </tr> 
+                    }
+            </table>
+        </div>
+    </div>  
+</main>
+ 
+<button id="purchase-btn">
+        <a style="padding-left: 5px;">
+            <p>
+                Buy It Now
+            </p>
+        </a>
+</button>

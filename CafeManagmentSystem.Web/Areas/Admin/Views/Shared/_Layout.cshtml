@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Coffee Shop Admin Pannel</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CafeManagementSystem.styles.css" asp-append-version="true" />
+    <link href="~/assets/css/my-admin-dashbord.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="sweetalert2.min.css"> 
+</head>
+
+
+<body class="g-sidenav-show  bg-gray-200 body">
+
+    @*side navbar*@
+    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 bg-gradient-dark shadow-dark" id="sidenav-main">
+        <div class="sidenav-header">
+            <a class="navbar-brand m-0"> 
+                <img src="~/image/190863.png" class="navbar-brand-img h-100" alt="main_logo" /> 
+                <span class="ms-1 font-weight-bold text-white">Cofe Admin Pannel</span>
+            </a>
+        </div>
+        <hr class="horizontal light mt-0 mb-2">
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white active bg-gradient-primary">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1" style="letter-spacing: 2px;">Users</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a asp-controller="User" asp-action="Index">All Users</a></li>
+                        <li>
+                            <a asp-controller="User" asp-action="Add">Add New User</a>
+                        </li>
+                        <li>
+                            <a asp-controller="User" asp-action="SignUpDateGroping">User Statistics</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white active bg-gradient-primary">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-diagram-3-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z" />
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1" style="letter-spacing: 2px;">Items</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a asp-controller="Item" asp-action="Index">All Items</a></li>
+                        <li>
+                            <a asp-controller="Item" asp-action="Add">Add New Item</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Item" asp-action="UpdateItemPrice">Update Items Price</a>
+                        </li>
+                    </ul>
+                </li> 
+            </ul>
+        </div>
+    </aside>
+    @*End side navbar*@
+     
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/MySite.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

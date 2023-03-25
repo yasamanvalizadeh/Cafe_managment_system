@@ -1,0 +1,58 @@
+﻿@model CafeManagementSystem.ViewModel.EditItemViewModel 
+@{
+    ViewData["Title"] = "Edit Item";
+}
+
+
+
+
+<div class="pink-container">
+    <main class="main-content position-relative border-radius-lg ps ps--active-y" style="height: auto;">
+        
+        
+        <!-- Add Item Form -->
+        <div class="c-admin">
+            <h2 class="f-title f-t-admin">
+               Edit Item
+            </h2>
+            <form autocomplete="off" 
+                asp-action="Edit" 
+                method="post"
+                  asp-route-so="@ViewData["CurrentSort"]"
+                  asp-route-query="@ViewData["CurrentFilter"]"
+                  asp-route-pageIndex="@ViewData["CurrentPageIndex"]"
+                  asp-route-TenantId="@ViewData["CurrentTenantId"]">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
+
+                <input asp-for="ItemId" hidden />  
+                <input asp-for="RowVersion" hidden />
+
+                <label asp-for="ItemName" class="f-label"></label>
+                <input asp-for="ItemName" class="f-Input" type="text" placeholder="Enter Item Name" /> </br>
+                <span asp-validation-for="ItemName" class="text-danger" style="display: inline-block;margin: 10px 10px 10px 0;"></span></br>
+
+                <label asp-for="CategoryId" class="f-label"></label></br>
+                <select 
+                    asp-for="CategoryId" 
+                    class="f-Input" 
+                    style="margin-bottom:20px;"
+                    asp-items="ViewBag.CatsId">
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger" style="display: inline-block;margin: 0 10px 10px 0;"></span></br>
+
+
+                <label asp-for="UnitPrice" class="f-label"></label>
+                <input asp-for="UnitPrice" class="f-Input" type="text" placeholder="Enter Item Price" /> </br>
+                <span asp-validation-for="UnitPrice" class="text-danger" style="display: inline-block;margin: 10px 10px 10px 0;"></span></br>
+
+                <button type="submit" class="f-btn"> Submit </button>
+            </form>
+        </div>
+    </main>
+</div>
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial">
+    }

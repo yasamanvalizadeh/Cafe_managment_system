@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CafeManagmentSystem.Web.props" />
+</Project>

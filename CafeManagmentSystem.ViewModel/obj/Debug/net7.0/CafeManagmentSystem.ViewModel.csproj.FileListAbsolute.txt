@@ -1,0 +1,53 @@
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.AssemblyReference.cache
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.AssemblyInfoInputs.cache
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.AssemblyInfo.cs
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.CoreCompileInputs.cache
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.deps.json
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.pdb
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.CopyComplete
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\refint\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.pdb
+F:\x\CafeManagmentSystem.Net\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\ref\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.deps.json
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.pdb
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.DataLayer.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeSystemManagement.Entity.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.DataLayer.pdb
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeSystemManagement.Entity.pdb
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.AssemblyReference.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.AssemblyInfoInputs.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.AssemblyInfo.cs
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.CoreCompileInputs.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.CopyComplete
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\refint\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.pdb
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\ref\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.AssemblyReference.cache
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.AssemblyInfoInputs.cache
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.AssemblyInfo.cs
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.CoreCompileInputs.cache
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.deps.json
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.ViewModel.pdb
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.Common.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.DataLayer.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeSystemManagement.Entity.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.Common.pdb
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeManagmentSystem.DataLayer.pdb
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\bin\Debug\net7.0\CafeSystemManagement.Entity.pdb
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.csproj.CopyComplete
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\refint\CafeManagmentSystem.ViewModel.dll
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\CafeManagmentSystem.ViewModel.pdb
+F:\x\CafeManagmentSystem.Net - Test\CafeManagmentSystem.ViewModel\obj\Debug\net7.0\ref\CafeManagmentSystem.ViewModel.dll

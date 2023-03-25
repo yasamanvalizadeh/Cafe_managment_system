@@ -1,0 +1,130 @@
+﻿@model CafeManagementSystem.ViewModel.Orders.MakeOrderViewModel
+@{
+    ViewData["Title"] = "User Order";
+}
+@{
+    var UserNotFoundError = TempData["UserNotFound"]; 
+}
+ 
+ 
+<div class="Container">
+    <p style="width: 100%;text-align:center;font-size:20px;margin-bottom:30px;" class="text-danger">
+        @UserNotFoundError
+    </p>
+    <h1 class="f-title">
+        Make Order
+    </h1>
+
+    <form autocomplete="off" method="post" asp-action="MakeOrders">
+        <div asp-validation-summary="ModelOnly"></div>
+
+        <label asp-for="UserName" class="f-label"></label></br>
+        <input asp-for="UserName" class="f-Input" type="text" placeholder="Enter your user name" /> </br>
+        <span asp-validation-for="UserName" class="f-span text-danger"></span></br>
+
+        <label asp-for="password" class="f-label"></label></br>
+        <input asp-for="password" class="f-Input" type="password" placeholder="Enter your password" /> </br>
+        <span asp-validation-for="password" class="f-span text-danger"></span></br>
+
+        <label asp-for="items" class="f-label"></label></br>
+            <div class="checkBox-container" > 
+                @for (var i = 0; i < Model.items.Count; i++)
+                    {
+                        <div class="f-checkBox" style="position:relative;margin-top:7px;margin-bottom:7px;height: 30px;">
+                            @Html.HiddenFor(model => Model.items[i].CategoryId)
+                            @Html.HiddenFor(model => Model.items[i].ItemId) 
+                            @Html.HiddenFor(model => Model.items[i].ItemName)
+                            @Html.HiddenFor(model => Model.items[i].UnitPrice)
+                            @Html.CheckBoxFor(model => Model.items[i].Checked ,new Dictionary<string, object> {
+                                {"onclick","Qty.call(this)"},
+                                { "class",@i},
+                                {"id","chb-id"}})
+
+
+                    
+
+                            <label class="chb-lable"> @Html.DisplayFor(model => Model.items[i].ItemName) </label>
+                             
+                            <label style="position:absolute;right:10px;"> @Html.DisplayFor(model => Model.items[i].UnitPrice) $ </label>
+
+                            <div class="Qty" style="display:inline;position:absolute;right:190px;" >
+                                <button type="button" class="makeOrder-btn delete-Btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="var(--add-btn-bg)" class="bi bi-trash3-fill" viewBox="0 0 12 2">
+                                        <path d="M1 2C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0H11C11.5523 0 12 0.447715 12 1C12 1.55228 11.5523 2 11 2H1Z" /> 
+                                    </svg>
+                                </button>
+                            </div> 
+
+                            @Html.TextBoxFor(model => Model.items[i].Qty , new Dictionary<string, object>{
+                                { "id",@i},
+                                {"class","item-qty"}})
+        
+                            <div class="Qty" style="display:inline;position:absolute;right:80px;" id="c-add-btn">
+                                <button type="button" class="makeOrder-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--add-btn-bg)" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                    </svg>
+                                </button>
+                            </div> 
+                      </div>
+                    }
+            </div>
+        </br>
+       
+        <button type="submit" class="f-btn dis-btn" disabled>Add To Cart </button>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial">
+        <script type="text/javascript">
+            
+            // Select item
+            function Qty() {
+                if ($('input:checkbox:checked').length > 0){
+                    $(".f-btn").removeClass("dis-btn");
+                    $(".f-btn").prop('disabled', false);
+                }
+                if ($('input:checkbox:checked').length == 0){
+                    $(".f-btn").addClass('dis-btn');
+                    $(".f-btn").prop('disabled', true);
+                } 
+                if (this.checked){
+                    $(this).parent().find("#c-add-btn").find(".makeOrder-btn").addClass("Add-Btn"); 
+                    var currentVal = $("#" + this.className).val(); 
+                    var finalVal = parseInt(currentVal) + 1;
+                    $("#" + this.className).attr("value", finalVal);
+                    $("#" + this.className).html(finalVal);
+
+                }
+                else{
+                    $(this).parent().find("#c-add-btn").find(".makeOrder-btn").removeClass("Add-Btn");
+                    $("#" + this.className).attr("value", "0");
+                    $("#" + this.className).html("0");
+                }
+            }
+
+            // add qty item
+
+            $('body').on('click', '.Add-Btn', function () {
+                    var currentVal = $(this).parent().prev().val();
+                    var finalVal = parseInt(currentVal) + 1;
+                    $(this).parent().prev().attr("value", finalVal);
+                    $(this).parent().prev().html(finalVal);
+            });
+
+            //delete qty item
+            $(".delete-Btn").click(function () {
+                var currentVal = $(this).parent().next().val();
+                if (currentVal == "0"){ 
+                    console.log("Your request is not valid!");
+                }
+                else{
+                    var finalVal = parseInt(currentVal) -1;
+                    $(this).parent().next().attr("value", finalVal);
+                    $(this).parent().next().html(finalVal);
+                }
+                
+            });
+            </script>
+    }

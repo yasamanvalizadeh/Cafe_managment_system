@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Add New Item";
+}
+@model CafeManagementSystem.ViewModel.AddItemViewModel
+ 
+
+<div class="pink-container">
+    <main class="main-content position-relative border-radius-lg ps ps--active-y" style="height: auto;">
+
+        <!-- Add Item Form -->
+        <div class="c-admin">
+            <h2 class="f-title f-t-admin">
+                Add New Item
+            </h2>
+            <form autocomplete="off" 
+                asp-action="Add" 
+                method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <label asp-for="TenantId" class="f-label"></label>
+                <input asp-for="TenantId" class="f-Input" type="number" placeholder="Enter tenant Id" /> </br>
+                <span asp-validation-for="TenantId" class="text-danger" style="display: inline-block;margin: 10px 10px 10px 0;"></span></br>
+              
+                <label asp-for="ItemName" class="f-label"></label>
+                <input asp-for="ItemName" class="f-Input" type="text" placeholder="Enter Item Code" /> </br>
+                <span asp-validation-for="ItemName" class="text-danger" style="display: inline-block;margin: 10px 10px 10px 0;"></span></br>
+
+                <label asp-for="CategoryId" class="f-label"></label></br>
+                <select asp-for="CategoryId"
+                        class="f-Input"
+                        style="margin-bottom:20px;" 
+                        asp-items="ViewBag.CatsId"> 
+                </select> 
+
+                <label asp-for="UnitPrice" class="f-label"></label>
+                <input asp-for="UnitPrice" class="f-Input" type="number" placeholder="Enter Item Price" /> </br>
+                <span asp-validation-for="UnitPrice" class="text-danger" style="display: inline-block;margin: 10px 10px 10px 0;"></span></br>
+
+                <button type="submit" class="f-btn"> Add Item </button>
+            </form>
+        </div>
+    </main>
+</div>
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial">
+    }
+
+
+
+

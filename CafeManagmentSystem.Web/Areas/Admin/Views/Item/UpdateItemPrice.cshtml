@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Update Items Price";
+}
+
+@model  CafeManagmentSystem.ViewModel.UpdateItemsPriceViewModel
+
+
+<div class="pink-container">
+    <main class="main-content position-relative border-radius-lg ps ps--active-y" style="height: auto;">
+
+        <!-- Update Item Price Form -->
+        <div class="c-admin">
+            <h2 class="f-title f-t-admin">
+                Update Item Price
+            </h2>
+            @if (ViewData["RowsAffected"] == null)
+            {
+                <form autocomplete="off" asp-action="UpdateItemPrice" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div> 
+
+                    <p style="margin:0 0 10px 0;padding:0;">
+                        Enter a number to multiply every item's price by:
+                    </p>
+
+                    <input asp-for="multiplier" class="f-Input" type="number" placeholder="Enter number.." />
+                    <span asp-validation-for="multiplier" class="text-danger" style="display: inline-block;margin: 10px 10px 10px 0;"></span>
+                      
+                    <button type="submit" class="f-btn"> Update </button> 
+                    </form>
+
+                <a asp-action="Index" style="text-transform:capitalize;margin-top: 20px;display:block;margin-left: 10px;">
+                    back to home
+                </a>
+            }
+            else
+            {
+               <p>
+                    Number of rows updated:
+               </p>
+                <div class="f-Input" style="margin-bottom:20px;padding-top:15px;"> 
+                    Number of rows updated:  @ViewData["RowsAffected"] 
+               </div>
+                <a asp-action="Index" style="text-transform:capitalize;margin-top: 20px;display:block;margin-left: 10px;">
+                    back to home
+                </a>
+            }
+        </div>
+    </main>
+</div>

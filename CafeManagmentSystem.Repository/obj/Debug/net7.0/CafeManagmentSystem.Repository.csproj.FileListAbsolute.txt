@@ -1,0 +1,5 @@
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Repository\obj\Debug\net7.0\CafeManagmentSystem.Repository.csproj.AssemblyReference.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Repository\obj\Debug\net7.0\CafeManagmentSystem.Repository.GeneratedMSBuildEditorConfig.editorconfig
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Repository\obj\Debug\net7.0\CafeManagmentSystem.Repository.AssemblyInfoInputs.cache
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Repository\obj\Debug\net7.0\CafeManagmentSystem.Repository.AssemblyInfo.cs
+F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Repository\obj\Debug\net7.0\CafeManagmentSystem.Repository.csproj.CoreCompileInputs.cache

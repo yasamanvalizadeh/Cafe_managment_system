@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CafeManagmentSystem.Web
+build_property.RootNamespace = CafeManagmentSystem.Web
+build_property.ProjectDir = F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Web\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = F:\x\CafeManagmentSystem.Net - Copy\CafeManagmentSystem.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Item/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Item/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Item/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Item/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Item/ShowItemOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVxTaG93SXRlbU9yZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Item/UpdateItemPrice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVxVcGRhdGVJdGVtUHJpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/User/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/User/DeleteUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxEZWxldGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/User/ShowUserOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxTaG93VXNlck9yZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/User/SignUpDateGroping.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxTaWduVXBEYXRlR3JvcGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/User/UpdateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxVcGRhdGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/Home/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/Reserve/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/User/MakeOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNYWtlT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/User/ManageOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNYW5hZ2VPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kax73kyu9j
+
+[F:/x/CafeManagmentSystem.Net - Copy/CafeManagmentSystem.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-foksw1fzgb

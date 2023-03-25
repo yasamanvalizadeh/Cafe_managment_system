@@ -1,0 +1,95 @@
+﻿@model CafeManagmentSystem.ViewModel.Users.ShowAllUserOrdersViewModel
+
+@{
+    ViewData["Title"] = "User Orders"; 
+}
+
+<div class="pink-container">
+    <main class="main-content position-relative border-radius-lg ps ps--active-y" style="height: auto;">
+
+        <!--search box-->
+         
+                <a asp-action="Index"
+           asp-route-so="@ViewData["CurrentSort"]"
+           asp-route-query="@ViewData["CurrentFilter"]"
+           asp-route-pageIndex="@ViewData["CurrentPageIndex"]">
+            <button style="background-color:transparent;border:none;margin-left:10px;margin-bottom:10px;">
+                        <div class="icon icon-lg icon-shape bg-gradient-info shadow-success text-center border-radius-xl" style="width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin:auto;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                            </svg>
+                        </div>
+                    </button>
+                </a> 
+
+        <!-- user order  -->
+        <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                    <h3 style="color:white;letter-spacing: 2px;padding-left: 1rem !important;text-transform: capitalize !important;">
+                        Orders Details for: @Model.FullName
+                    </h3>
+                </div>
+            </div>
+
+            <table class="t-items">
+                <tr> 
+                    <th>
+                        Order date
+                    </th>  
+                    <th>
+                        Order Status
+                    </th>
+                    <th>
+                        Item Name
+                    </th>
+                    <th>
+                        Order Category
+                    </th>
+                    <th>
+                        Order Unit Price
+                    </th>
+                    <th>
+                        Order Qty
+                    </th>
+                    <th>
+                        Total
+                    </th>
+                </tr>
+
+                @foreach (var Item in Model.Orders)
+                {
+                    foreach(var item in Item.OrderDetail)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(model => Item.AddedDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => Item.OrderStatus)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => item.Item.ItemName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => item.Item.CategoryId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => item.Item.UnitPrice)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => item.Qty)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => item.Amount)
+                            </td>
+                        </tr>
+                    }
+                } 
+            </table>
+        </div>  
+    </main>
+</div>
+
+

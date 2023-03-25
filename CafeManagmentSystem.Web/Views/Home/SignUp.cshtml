@@ -1,0 +1,59 @@
+﻿@model CafeManagementSystem.ViewModel.Users.AddUserViewModel
+
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<div class="Container">
+    <h1 class="f-title" style="margin-bottom: 30px;">
+        Create Account
+    </h1>
+
+    <form autocomplete="off" 
+        asp-action="SignUp"
+          data-ajax="true"
+          data-ajax-method="POST"
+          data-ajax-success="OnSuccessSignUp"
+          data-ajax-failure="onFailurSignUp">
+        <div asp-validation-summary="ModelOnly"></div>
+        
+        <label asp-for="Fname" class="f-label"></label>
+        <input asp-for="Fname" class="f-Input" type="text" placeholder="Enter your first name" /> </br>
+        <span asp-validation-for="Fname" class="f-span text-danger"></span></br>
+
+        <label asp-for="Lname" class="f-label"></label>
+        <input asp-for="Lname" class="f-Input" type="text" placeholder="Enter your last name" /> </br>
+        <span asp-validation-for="Lname" class="f-span text-danger"></span></br>
+
+        <label asp-for="UserName" class="f-label"></label>
+        <input asp-for="UserName" class="f-Input" type="text" placeholder="Enter your user name" /> </br>
+        <span asp-validation-for="UserName" class="f-span text-danger"></span></br>
+
+        <label asp-for="phoneNumber" class="f-label"></label>
+        <input asp-for="phoneNumber" class="f-Input" type="text" placeholder="Enter your phone number" /> </br>
+        <span asp-validation-for="phoneNumber" class="f-span text-danger"></span></br>
+
+        <label asp-for="password" class="f-label"></label>
+        <input asp-for="password" class="f-Input" type="password" placeholder="Enter your password" /> </br>
+        <span asp-validation-for="password" class="f-span text-danger"></span></br>
+
+        <label asp-for="confirmPassword" class="f-label"></label>
+        <input asp-for="confirmPassword" class="f-Input" type="password" placeholder="Enter your password again" /> </br>
+        <span asp-validation-for="confirmPassword" class="f-span text-danger"></span></br>
+
+
+        <button type="submit" class="f-btn"> Sign Up</button>
+    </form>
+     <!-- <div class="f-link-container">
+        <a asp-action="Index">
+            <p class="f-link">
+                Already Member?
+            </p>
+        </a> 
+    </div> -->
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"> 
+    <script src="~/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+    }

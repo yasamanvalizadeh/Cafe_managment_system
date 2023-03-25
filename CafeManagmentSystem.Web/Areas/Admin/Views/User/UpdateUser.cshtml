@@ -1,0 +1,64 @@
+﻿
+@model CafeManagementSystem.ViewModel.Users.UpdateUserViewModel
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<div class="pink-container">
+    <main class="main-content position-relative border-radius-lg ps ps--active-y" style="height: auto;">
+
+        <!-- Add User Form -->
+        <div class="c-admin">
+            <h2 class="f-title f-t-admin">
+                Update User
+            </h2>
+            <form autocomplete="off" 
+                asp-action="UpdateUser" 
+                method="post" 
+                style="margin-bottom:30px;"
+                  asp-route-so="@ViewData["CurrentSort"]"
+                  asp-route-query="@ViewData["CurrentFilter"]"
+                  asp-route-pageIndex="@ViewData["CurrentPageIndex"]"
+                  asp-route-TenantId="@ViewData["CurrentTenantId"]">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input asp-for="userId" hidden/> 
+                <input asp-for="RowVersion" hidden />
+
+                <label asp-for="Fname" class="f-label"></label>
+                <input asp-for="Fname" class="f-Input" type="text" placeholder="Enter your first name" /> </br>
+                <span asp-validation-for="Fname" class="f-span text-danger"></span></br>
+
+                <label asp-for="Lname" class="f-label"></label>
+                <input asp-for="Lname" class="f-Input" type="text" placeholder="Enter your last name" /> </br>
+                <span asp-validation-for="Lname" class="f-span text-danger"></span></br>
+                 
+                <label asp-for="UserName" class="f-label"></label>
+                <input asp-for="UserName" class="f-Input" type="text" placeholder="Enter your user name" /> </br>
+                <span asp-validation-for="UserName" class="f-span text-danger"></span></br>
+
+                <label asp-for="phoneNumber" class="f-label"></label>
+                <input asp-for="phoneNumber" class="f-Input" type="text" placeholder="Enter your phone number" /> </br>
+                <span asp-validation-for="phoneNumber" class="f-span text-danger"></span></br>
+
+                <label asp-for="password" class="f-label"></label>
+                <input asp-for="password" class="f-Input" type="password" placeholder="Enter your password"  /> </br>
+                <span asp-validation-for="password" class="f-span text-danger"></span></br>
+
+                <button type="submit" class="f-btn"> Submit </button>
+            </form>
+            <a asp-action="Index"
+               asp-route-so="@ViewData["CurrentSort"]"
+               asp-route-query="@ViewData["CurrentFilter"]"
+               asp-route-pageIndex="@ViewData["CurrentPageIndex"]">
+                Back to Home
+            </a>
+        </div> 
+    </main>
+</div>
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial">
+    }
