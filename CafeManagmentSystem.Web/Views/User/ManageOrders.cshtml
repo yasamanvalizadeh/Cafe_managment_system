@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<CafeSystemManagement.Entities.Order>
+@{
     ViewData["Title"] = "Order List";
 } 
  
@@ -33,7 +34,7 @@
                         Orderer Contact
                     </th>
                 </tr>
-                @foreach (var od in ViewBag.OrderDetails)
+                @foreach (var od in Model)
                 {
 
                     <tr>
@@ -47,10 +48,10 @@
                             @string.Format("{0:hh:mm tt}",od.AddedDate)
                         </td>
                         <td>
-                            @od.Order.User.UserName
+                            @od.User.UserName
                         </td>
                         <td>
-                            @od.Order.User.UserNumber
+                            @od.User.UserNumber
                         </td>
                     </tr>
                 } 

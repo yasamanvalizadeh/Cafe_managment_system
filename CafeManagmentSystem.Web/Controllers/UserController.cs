@@ -79,10 +79,10 @@ namespace CafeManagementSystem.Controllers
 
         public async Task<IActionResult> ManageOrders(int UserId)
         {
-            var orders = await _uow.OrderServices.GetAllAsync(filter: o => o.UserId == UserId);
+            var orders = await _uow.OrderServices.GetAllAsync(filter: o => o.UserId == UserId, includeProperties:"User");
             foreach(var o in orders)
             {
-                ViewBag.OrderDetails = await _uow.OrderDetailServices.GetAllAsync(filter: o => o.OrderId == o.OrderId, includeProperties: "Item,Order.User");
+                ViewBag.OrderDetails = await _uow.OrderDetailServices.GetAllAsync(filter: o => o.OrderId == o.OrderId, includeProperties: "Item");
             }
               
             if (ViewBag.OrderDetails == null)
@@ -90,7 +90,7 @@ namespace CafeManagementSystem.Controllers
                 return NotFound();
             }
             else
-                return View();
+                return View(orders);
         }
     }
 }
