@@ -31,7 +31,7 @@ Order detail include: item name, item category, item unit price, item quantity, 
 ![Screenshot (462)](https://user-images.githubusercontent.com/112771618/230290037-057f8ab0-bc93-4431-9d74-7fdcd7ec5000.png)
 ![Screenshot (461)](https://user-images.githubusercontent.com/112771618/230290054-f82945f1-61de-442a-925c-4bd021ca3798.png)
 ![Screenshot (433)](https://user-images.githubusercontent.com/112771618/227704849-11f51d7c-25db-49ce-85eb-aa6f7679e07c.png)
-![Screenshot (434)](https://user-images.githubusercontent.com/112771618/227704856-406f395a-c815-4077-aa7e-2a0de29bf949.png)
+![Screenshot (461)](https://user-images.githubusercontent.com/112771618/230290209-d351d02a-e480-4ced-97d8-2995187d2103.png)
 ![Screenshot (435)](https://user-images.githubusercontent.com/112771618/227704862-c2bc9833-48dc-4e0a-a8e8-a622bc77edcf.png)
 ![Screenshot (436)](https://user-images.githubusercontent.com/112771618/227704866-fa67681e-d9ce-45e0-8604-5af1099645fa.png)
 ![Screenshot (437)](https://user-images.githubusercontent.com/112771618/227704868-81638b0c-5eec-47cf-8433-e7952c711515.png)
